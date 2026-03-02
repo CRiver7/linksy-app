@@ -3,7 +3,7 @@ dotenv.config();
 
 import express, { Request, Response } from 'express';
 import cors from 'cors';
-import linkRoutes from './routes/link.routes';
+import linkRoutes from './routes/link.routes.js';
 
 const app = express();
 
