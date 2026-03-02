@@ -1,6 +1,6 @@
-import * as repo from '../repositories/link.repository';
-import { Link } from '../models/link.model';
-import { isReserved } from '../utils/reserved-words';
+import * as repo from '../repositories/link.repository.js';
+import { Link } from '../models/link.model.js';
+import { isReserved } from '../utils/reserved-words.js';
 
 export const createShortLink = async (
   alias: string,

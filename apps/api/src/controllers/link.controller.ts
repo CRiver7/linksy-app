@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import { z } from 'zod';
-import * as service from '../services/link.service';
+import * as service from '../services/link.service.js';
 
 // request schema
 const createLinkSchema = z.object({
