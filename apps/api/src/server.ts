@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 dotenv.config();
 
-import express from 'express';
+import express, { Request, Response } from 'express';
 import cors from 'cors';
 import linkRoutes from './routes/link.routes';
 
@@ -30,7 +30,7 @@ app.use(express.json());
 
 app.use(linkRoutes);
 
-app.get('/', (req, res) => {
+app.get('/', (req: Request, res: Response) => {
   res.json({ message: 'Linksy API is running' });
 });
 
